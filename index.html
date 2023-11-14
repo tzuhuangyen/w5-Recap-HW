@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="we arrange accommodation,car rental,transport and day trip service, etc..."
+    />
+    <meta name="robots" content="index, follow" />
+    <title>W5 - Recap: Homework</title>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gwendolyn&family=Noto+Sans+TC&family=Nunito:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="./scss/base.scss" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./scss/style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="img/ReDI.png" alt="" />
+          <h1>W5 - Recap: Homework</h1>
+        </div>
+        <ul>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/tzu-huang-yen-971b45192/"
+              alt="linkedin"
+              ><i
+                class="fa-brands fa-linkedin fa-2xl"
+                style="color: Mediumslateblue"
+              ></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/tzuhuangyen" alt="github"
+              ><i
+                class="fa-brands fa-github fa-2xl"
+                style="color: Mediumslateblue"
+              ></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- banner -->
+    <div class="banner">
+      <div class="container d-flex">
+        <div class="d-flex flex-column">
+          <div class="banner-img">
+            <div><img src="img/yenavater.png" alt="" class="avatar" /></div>
+          </div>
+          <button class="email">
+            <a href="mailto:912yan@gmail.com">Tzu-Huang,Yen</a>
+          </button>
+        </div>
+        <!-- corrdion -->
+        <ol class="corrdion">
+          <li>
+            <details>
+              <summary class="custom-button">
+                Bugs and technical issues are part of a Web Developer’s life.
+                Have you ever encounter a similar issue in your code life? What
+                could a Developer do to fix this type of situation? Explain how
+                you deal with that and, if you have some memorable situation to
+                briefly exemplify, feel free to write it.
+              </summary>
+              <p>
+                Q1.In debugging, I first check the terminal in VSCode and use
+                browser dev tools to inspect for errors in the console.
+                Understanding error messages helps locate the problematic code
+                line. If needed, I turn to Google or ChatGPT for solutions. If
+                issues persist, I experiment with alternative code approaches. I
+                once faced a challenging situation where a function wasn't
+                working, and despite no visible errors, I spent hours debugging.
+                Ultimately, the issue was a simple typo…
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="custom-button">
+                What’s one reason for using a dedicated JavaScript file instead
+                of incorporating JavaScript code within an HTML document?
+              </summary>
+              <p>
+                Q2.Using a dedicated JavaScript file is important for organising
+                and maintaining code. When you keep HTML, CSS, and JavaScript in
+                separate files, it makes the code more modular and simpler to
+                handle. If you need to modify or update the JavaScript logic,
+                you can do it in one location (the external file), making the
+                code cleaner and facilitating collaboration in bigger projects.
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="custom-button">
+                What is the difference between synchronous and asynchronous code
+                in JavaScript?
+              </summary>
+              <p>
+                Q3. Synchronous code in JavaScript does things one after the
+                other, step by step. It waits for each task to finish before
+                moving on to the next one. On the flip side, asynchronous code
+                lets tasks happen independently without waiting for each other
+                to finish. It uses callbacks, promises, or async/await to manage
+                these tasks. This helps the program to keep doing other things
+                while waiting for certain tasks to complete. It's handy for
+                making programs more efficient and responsive, particularly when
+                dealing with tasks that take a bit of time, like fetching data
+                or handling user input.
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="custom-button">
+                What is the difference between a Promise and a Callback in
+                JavaScript?
+              </summary>
+              <p>
+                In JavaScript, both Promises and Callbacks are used for handling
+                asynchronous tasks, but they have differences in how they work
+                and how you use them. Callback: A callback is a function that
+                you pass as an argument to another function. It runs after a
+                specific task finishes or at a set time. Using callbacks for
+                multiple nested asynchronous operations can make the code hard
+                to read and maintain, leading to what's called "callback hell".
+                Promise: A Promise is an object representing the eventual
+                completion or failure of an asynchronous operation and its
+                result. It has a clearer and more organized syntax, making it
+                easier to read and write asynchronous code. Promises come with
+                methods like .then() and .catch() to handle success and failure,
+                simplifying the chaining of asynchronous tasks. In summary,
+                Promises provide a more structured and readable way to handle
+                asynchronous tasks compared to callbacks. They help avoid
+                callback hell and make asynchronous code more understandable.
+              </p>
+            </details>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <footer>
+      <!-- <h2>Coding With Tzu-Huang, Yen</h2> -->
+      <h3>Projects</h3>
+      <ul class="project">
+        <li>
+          <a
+            href="https://tzuhuangyen.github.io/Pets-love-JC/"
+            target="_blank"
+            alt="寵物零食展示平台"
+            >web layout project
+            <!-- <i class="fa-regular fa-paw" style="color: Mediumslateblue;"></i> -->
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://tzuhuangyen.github.io/Furniture-online-shop/"
+            target="_blank"
+            alt="傢俱電商"
+            >e-commerce project
+            <!-- <i class="fa-solid fa-loveseat" style="color: Mediumslateblue;"></i> -->
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://tzuhuangyen.github.io/U-todolist/"
+            target="_blank"
+            alt="待辦事項清單"
+            >todo list project
+            <!-- <i class="fa-sharp fa-light fa-list-check" style="color: Mediumslateblue;"></i> -->
+            <!-- <i class="fa-thin fa-list"></i> -->
+          </a>
+        </li>
+      </ul>
+
+      <p>©2023 By Yen</p>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/a9ce70e31b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="./all.js"></script> -->
+  </body>
+</html>
